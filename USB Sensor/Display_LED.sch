@@ -742,15 +742,6 @@ http://www.maxim-ic.com .. MAX3223-MAX3243.pdf</description>
 <smd name="8" x="-2.4" y="-1.75" dx="0.7" dy="0.3" layer="1" roundness="50"/>
 <smd name="TH" x="0" y="0" dx="3.1" dy="3.1" layer="1" roundness="10" cream="no"/>
 <text x="0" y="3.286" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<rectangle x1="-2.325" y1="0.975" x2="-0.975" y2="2.325" layer="31"/>
-<rectangle x1="-0.675" y1="0.975" x2="0.675" y2="2.325" layer="31"/>
-<rectangle x1="0.977" y1="0.977" x2="2.327" y2="2.327" layer="31" rot="R90"/>
-<rectangle x1="0.975" y1="-2.325" x2="2.325" y2="-0.975" layer="31" rot="R180"/>
-<rectangle x1="-0.675" y1="-2.325" x2="0.675" y2="-0.975" layer="31" rot="R180"/>
-<rectangle x1="-2.327" y1="-2.327" x2="-0.977" y2="-0.977" layer="31" rot="R270"/>
-<rectangle x1="0.975" y1="-0.674" x2="2.325" y2="0.676" layer="31" rot="R180"/>
-<rectangle x1="-0.675" y1="-0.674" x2="0.675" y2="0.676" layer="31" rot="R180"/>
-<rectangle x1="-2.327" y1="-0.676" x2="-0.977" y2="0.674" layer="31" rot="R270"/>
 <smd name="9" x="-1.75" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
 <smd name="10" x="-1.25" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
 <smd name="11" x="-0.75" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
@@ -781,6 +772,10 @@ http://www.maxim-ic.com .. MAX3223-MAX3243.pdf</description>
 <wire x1="2.5" y1="-2.5" x2="2.25" y2="-2.5" width="0.254" layer="21"/>
 <wire x1="-2.5" y1="2.25" x2="-2.5" y2="2.5" width="0.254" layer="21"/>
 <wire x1="-2.5" y1="2.5" x2="-2.25" y2="2.5" width="0.254" layer="21"/>
+<rectangle x1="-1.273" y1="0.173" x2="-0.173" y2="1.273" layer="31"/>
+<rectangle x1="0.173" y1="0.173" x2="1.273" y2="1.273" layer="31" rot="R270"/>
+<rectangle x1="-1.273" y1="-1.273" x2="-0.173" y2="-0.173" layer="31" rot="R90"/>
+<rectangle x1="0.173" y1="-1.273" x2="1.273" y2="-0.173" layer="31" rot="R180"/>
 </package>
 <package name="AVRISP">
 <wire x1="-2.54" y1="3.048" x2="-1.778" y2="3.81" width="0.127" layer="21"/>
@@ -6790,6 +6785,26 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="-2.4892" y1="-1.3208" x2="-1.6393" y2="1.3292" layer="21"/>
 <rectangle x1="1.651" y1="-1.3208" x2="2.5009" y2="1.3292" layer="21"/>
 </package>
+<package name="R_TH_0.4&quot;">
+<description>Relaxed resistor layout (0.4") for standard 1/4W resistors</description>
+<pad name="P$1" x="-5.08" y="0" drill="1.1"/>
+<pad name="P$2" x="5.08" y="0" drill="1.1"/>
+<wire x1="-3" y1="1.15" x2="-3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.15" x2="-1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.15" x2="-1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.016" x2="1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.016" x2="1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.15" x2="3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.15" x2="3" y2="1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="1.15" x2="1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.15" x2="1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.016" x2="-1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.15" x2="-3" y2="1.15" width="0.127" layer="21"/>
+<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.2" layer="21"/>
+<wire x1="4.953" y1="0" x2="3.048" y2="0" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -9032,6 +9047,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TH_0.4&quot;" package="R_TH_0.4&quot;">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
