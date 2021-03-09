@@ -187,7 +187,7 @@
 <wire x1="4" y1="0" x2="4" y2="6" width="0.127" layer="21"/>
 <wire x1="4" y1="6" x2="-4" y2="6" width="0.127" layer="21"/>
 </package>
-<package name="USB_A_AMPHENOL">
+<package name="USB_A_FEMALE_AMPHENOL">
 <description>Footprint for full size USB A recepticle from Amphenol, &lt;a href = "https://signin.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf"&gt;UE27AC54100&lt;/a&gt;</description>
 <pad name="GND" x="-3.5" y="0" drill="0.92"/>
 <pad name="D+" x="-1" y="0" drill="0.92"/>
@@ -205,7 +205,7 @@
 <wire x1="7.25" y1="-0.61" x2="7" y2="-0.86" width="0.127" layer="21"/>
 <text x="-8.382" y="7.62" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
-<package name="USB_A_0480372200">
+<package name="USB_A_MALE_0480372200">
 <description>&lt;b&gt;USB-A, Male&lt;/b&gt;&lt;br&gt;0480372200&lt;br&gt;&lt;a href = https://www.molex.com/pdm_docs/sd/480372200_sd.pdf&gt;Datasheet&lt;/a&gt;</description>
 <wire x1="-5.85" y1="1" x2="-5.85" y2="-1" width="1.3" layer="1"/>
 <pad name="BODY@1" x="-5.85" y="1" drill="0.7"/>
@@ -214,7 +214,7 @@
 <wire x1="-6.2" y1="1" x2="-6.2" y2="-1" width="0" layer="46"/>
 <wire x1="-5.5" y1="1" x2="-6.2" y2="1" width="0" layer="46" curve="180"/>
 <wire x1="-6.2" y1="-1" x2="-5.5" y2="-1" width="0" layer="46" curve="180"/>
-<wire x1="-3.555" y1="0.925" x2="-3.555" y2="-0.925" width="1.1" layer="29"/>
+<wire x1="-5.85" y1="0.925" x2="-5.85" y2="-0.925" width="1.1" layer="29"/>
 <wire x1="-5.85" y1="1" x2="-5.85" y2="-1" width="1.3" layer="16"/>
 <hole x="-2.25" y="0" drill="1.2"/>
 <hole x="2.25" y="0" drill="1.1"/>
@@ -241,43 +241,7 @@
 <smd name="D+" x="-1" y="2.6" dx="2" dy="1.2" layer="1" rot="R90"/>
 <smd name="GND" x="-3.5" y="2.6" dx="2" dy="1.2" layer="1" rot="R90"/>
 <wire x1="5.85" y1="-1" x2="5.85" y2="1" width="1.3" layer="16"/>
-</package>
-<package name="USB_A_UP2-AH">
-<description>&lt;b&gt;USB-A, Male&lt;/b&gt;&lt;br&gt;UP2-AH&lt;br&gt;&lt;a href = https://www.cuidevices.com/product/resource/up2-ah-th.pdf&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="-5.85" y1="1" x2="-5.85" y2="-1" width="1.6" layer="1"/>
-<pad name="BODY@1" x="-5.85" y="1" drill="1"/>
-<pad name="BODY@2" x="-5.85" y="-1" drill="1"/>
-<wire x1="-5.35" y1="-1" x2="-5.35" y2="1" width="0" layer="46"/>
-<wire x1="-6.35" y1="1" x2="-6.35" y2="-1" width="0" layer="46"/>
-<wire x1="-5.35" y1="1" x2="-6.35" y2="1" width="0" layer="46" curve="180"/>
-<wire x1="-6.35" y1="-1" x2="-5.35" y2="-1" width="0" layer="46" curve="180"/>
-<wire x1="-3.555" y1="0.925" x2="-3.555" y2="-0.925" width="1.1" layer="29"/>
-<wire x1="-5.85" y1="1" x2="-5.85" y2="-1" width="1.6" layer="16"/>
-<wire x1="5.85" y1="-1" x2="5.85" y2="1" width="1.6" layer="1"/>
-<pad name="BODY@3" x="5.85" y="-1" drill="1" rot="R180"/>
-<pad name="BODY@4" x="5.85" y="1" drill="1" rot="R180"/>
-<wire x1="5.35" y1="1" x2="5.35" y2="-1" width="0" layer="46"/>
-<wire x1="6.35" y1="-1" x2="6.35" y2="1" width="0" layer="46"/>
-<wire x1="5.35" y1="-1" x2="6.35" y2="-1" width="0" layer="46" curve="180"/>
-<wire x1="6.35" y1="1" x2="5.35" y2="1" width="0" layer="46" curve="180"/>
-<wire x1="5.85" y1="-1" x2="5.85" y2="1" width="1.6" layer="16"/>
-<pad name="GND" x="-3.5" y="2.1" drill="1"/>
-<pad name="D+" x="-1" y="2.1" drill="1"/>
-<pad name="D-" x="1" y="2.1" drill="1"/>
-<pad name="VCC" x="3.5" y="2.1" drill="1"/>
-<hole x="-2.3" y="0" drill="1.2"/>
-<hole x="2.3" y="0" drill="1.2"/>
-<wire x1="6" y1="-17.55" x2="6" y2="0.75" width="0.127" layer="21"/>
-<wire x1="6" y1="0.75" x2="5.75" y2="1" width="0.127" layer="21"/>
-<wire x1="5.75" y1="1" x2="-5.75" y2="1" width="0.127" layer="21"/>
-<wire x1="-5.75" y1="1" x2="-6" y2="0.75" width="0.127" layer="21"/>
-<wire x1="-6" y1="0.75" x2="-6" y2="-17.55" width="0.127" layer="21"/>
-<wire x1="-6" y1="-17.55" x2="-5.75" y2="-17.8" width="0.127" layer="21"/>
-<wire x1="-5.75" y1="-17.8" x2="5.75" y2="-17.8" width="0.127" layer="21"/>
-<wire x1="5.75" y1="-17.8" x2="6" y2="-17.55" width="0.127" layer="21"/>
-<wire x1="-6" y1="-2.9" x2="6" y2="-2.9" width="0.127" layer="48" style="shortdash"/>
-<text x="0" y="-3.81" size="0.8128" layer="48" font="vector" ratio="15" align="center">Board Edge</text>
-<text x="-7.62" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<wire x1="5.85" y1="-0.925" x2="5.85" y2="0.925" width="1.1" layer="29"/>
 </package>
 <package name="VDFN-10">
 <description>10 pin, 3x3mm Very Thin Dual Flat, No Lead Package (9Q) &lt;br&gt;
@@ -425,6 +389,45 @@ Based on &lt;a href = "http://ww1.microchip.com/downloads/en/DeviceDoc/20005386B
 <wire x1="-4.825" y1="-3.6" x2="-3.825" y2="-4.6" width="0.127" layer="21"/>
 <text x="-5.715" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
+<package name="USB_A_UP2-AH">
+<description>&lt;b&gt;USB-A, Male&lt;/b&gt;&lt;br&gt;UP2-AH&lt;br&gt;&lt;a href = https://www.cuidevices.com/product/resource/up2-ah-th.pdf&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-5.85" y1="1" x2="-5.85" y2="-1" width="1.6" layer="1"/>
+<pad name="BODY@1" x="-5.85" y="1" drill="1"/>
+<pad name="BODY@2" x="-5.85" y="-1" drill="1"/>
+<wire x1="-5.35" y1="-1" x2="-5.35" y2="1" width="0" layer="46"/>
+<wire x1="-6.35" y1="1" x2="-6.35" y2="-1" width="0" layer="46"/>
+<wire x1="-5.35" y1="1" x2="-6.35" y2="1" width="0" layer="46" curve="180"/>
+<wire x1="-6.35" y1="-1" x2="-5.35" y2="-1" width="0" layer="46" curve="180"/>
+<wire x1="-5.85" y1="0.925" x2="-5.85" y2="-0.925" width="1.1" layer="29"/>
+<wire x1="-5.85" y1="1" x2="-5.85" y2="-1" width="1.6" layer="16"/>
+<wire x1="5.85" y1="-1" x2="5.85" y2="1" width="1.6" layer="1"/>
+<pad name="BODY@3" x="5.85" y="-1" drill="1" rot="R180"/>
+<pad name="BODY@4" x="5.85" y="1" drill="1" rot="R180"/>
+<wire x1="5.35" y1="1" x2="5.35" y2="-1" width="0" layer="46"/>
+<wire x1="6.35" y1="-1" x2="6.35" y2="1" width="0" layer="46"/>
+<wire x1="5.35" y1="-1" x2="6.35" y2="-1" width="0" layer="46" curve="180"/>
+<wire x1="6.35" y1="1" x2="5.35" y2="1" width="0" layer="46" curve="180"/>
+<wire x1="5.85" y1="-1" x2="5.85" y2="1" width="1.6" layer="16"/>
+<pad name="GND" x="-3.5" y="2.1" drill="1"/>
+<pad name="D+" x="-1" y="2.1" drill="1"/>
+<pad name="D-" x="1" y="2.1" drill="1"/>
+<pad name="VCC" x="3.5" y="2.1" drill="1"/>
+<hole x="-2.3" y="0" drill="1.2"/>
+<hole x="2.3" y="0" drill="1.2"/>
+<wire x1="6" y1="-17.55" x2="6" y2="0.75" width="0.127" layer="21"/>
+<wire x1="6" y1="0.75" x2="5.75" y2="1" width="0.127" layer="21"/>
+<wire x1="5.75" y1="1" x2="-5.75" y2="1" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="1" x2="-6" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-6" y1="0.75" x2="-6" y2="-17.55" width="0.127" layer="21"/>
+<wire x1="-6" y1="-17.55" x2="-5.75" y2="-17.8" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="-17.8" x2="5.75" y2="-17.8" width="0.127" layer="21"/>
+<wire x1="5.75" y1="-17.8" x2="6" y2="-17.55" width="0.127" layer="21"/>
+<wire x1="-6" y1="-2.9" x2="6" y2="-2.9" width="0.127" layer="48" style="shortdash"/>
+<text x="0" y="-3.81" size="0.8128" layer="48" font="vector" ratio="15" align="center">Board Edge</text>
+<text x="-7.62" y="0" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<wire x1="-6.35" y1="1" x2="-6.35" y2="-1" width="0" layer="46"/>
+<wire x1="5.85" y1="-0.925" x2="5.85" y2="0.925" width="1.1" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -435,8 +438,8 @@ Based on &lt;a href = "http://ww1.microchip.com/downloads/en/DeviceDoc/20005386B
 <wire x1="-5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="7.62" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <text x="-1.27" y="-2.54" size="2.54" layer="94" rot="R90">USB</text>
-<text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-5.08" y="7.874" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <pin name="D+" x="-7.62" y="0" visible="pad" length="short"/>
 <pin name="D-" x="-7.62" y="2.54" visible="pad" length="short"/>
 <pin name="VBUS" x="-7.62" y="5.08" visible="pad" length="short" direction="pwr"/>
@@ -531,7 +534,7 @@ Based on &lt;a href = "http://ww1.microchip.com/downloads/en/DeviceDoc/20005386B
 <technology name=""/>
 </technologies>
 </device>
-<device name="A_FEMALE_AMPHENOL" package="USB_A_AMPHENOL">
+<device name="A_FEMALE_AMPHENOL" package="USB_A_FEMALE_AMPHENOL">
 <connects>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
@@ -547,7 +550,7 @@ Based on &lt;a href = "http://ww1.microchip.com/downloads/en/DeviceDoc/20005386B
 </technology>
 </technologies>
 </device>
-<device name="A_MALE_MOLEX" package="USB_A_0480372200">
+<device name="A_MALE_MOLEX" package="USB_A_MALE_0480372200">
 <connects>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
@@ -3892,6 +3895,26 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="R_TH_0.4&quot;">
+<description>Relaxed resistor layout (0.4") for standard 1/4W resistors</description>
+<pad name="P$1" x="-5.08" y="0" drill="1.1"/>
+<pad name="P$2" x="5.08" y="0" drill="1.1"/>
+<wire x1="-3" y1="1.15" x2="-3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.15" x2="-1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.15" x2="-1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.016" x2="1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.016" x2="1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.15" x2="3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.15" x2="3" y2="1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="1.15" x2="1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.15" x2="1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.016" x2="-1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.15" x2="-3" y2="1.15" width="0.127" layer="21"/>
+<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.2" layer="21"/>
+<wire x1="4.953" y1="0" x2="3.048" y2="0" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R-EU">
@@ -4253,6 +4276,18 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-0730RL" constant="no"/>
 <attribute name="VALUE_PART" value="30" constant="no"/>
+</technology>
+<technology name="309K">
+<attribute name="DIGIKEY" value="P309KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF3093V" constant="no"/>
+<attribute name="VALUE_PART" value="309k" constant="no"/>
+</technology>
+<technology name="316K">
+<attribute name="DIGIKEY" value="311-316KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07316KL" constant="no"/>
+<attribute name="VALUE_PART" value="316k" constant="no"/>
 </technology>
 <technology name="33.2K">
 <attribute name="DIGIKEY" value="311-33.2KHRCT-ND" constant="no"/>
@@ -5236,6 +5271,15 @@ Source: AVX .. aphvc.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TH_0.4&quot;" package="R_TH_0.4&quot;">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
